@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="Magento_Crud::parent" title="Crud" module="Magento_Crud" sortOrder="100" resource="Magento_Crud::parent"/>
+        <add id="Magento_Crud::index" title="Crud Index" module="Magento_Crud" sortOrder="10" action="crud/index" resource="Magento_Crud::index" parent="Magento_Crud::parent"/>
+		<add id="Magento_Crud::magento" title="Crud Magento" module="Magento_Crud" sortOrder="20" parent="Magento_Crud::parent" action="crud/magento" resource="Magento_Crud::magento"/>
+
+    </menu>
+</config>
